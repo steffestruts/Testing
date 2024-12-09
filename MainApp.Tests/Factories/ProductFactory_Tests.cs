@@ -20,7 +20,9 @@ public class ProductFactory_Tests
 
     [Theory]
     [InlineData("", 0)]
+    [InlineData("", 100)]
     [InlineData("Test Product", 0)]
+    [InlineData("Test Product", 100)]
     public void Create_ShouldReturnProduct_WhenProductRegistrationFormIsSupplied(string title, decimal price) 
     {
         // Arrange
